@@ -1,0 +1,206 @@
+/**
+ * Rockstars theme for reveal.js. 
+ *
+ * By Jacob Duijzer - https://www.duijzer.com
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+// Include theme-specific fonts
+$fonts-path: "https://teamrockstars.nl/wp-content/uploads/2020/10/";
+
+@font-face {
+    src:url("#{$fonts-path}/353190_1_0.woff2") format("woff2");
+    font-family: "din-2014-regular";
+}
+
+@font-face {
+    src:url("#{$fonts-path}/353190_2_0.woff2") format("woff2");
+    font-family: "DIN2014-Demi";
+}
+
+@font-face {
+    src:url("#{$fonts-path}/353190_0_0.woff2") format("woff2");
+    font-family:din-2014-bold;
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    src:url("#{$fonts-path}/Pacifico-Regular.ttf") format("truetype");
+    font-family: pacifico-regular;
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+// Colours
+$rsYellow: #ffe000;
+$rsDark: #232323;
+$white: #ffffff;
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #fff;
+
+$mainColor: #222;
+$headingColor: #222;
+
+$mainFontSize: 32px;
+$mainFont: din-2014-regular, sans-serif;
+$headingFont: din-2014-bold, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingFontWeight: 600;
+$linkColor: $rsYellow;
+$linkColorHover: lighten( $linkColor, 10% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$handWrittenFont: pacifico-regular;
+
+$heading1Size: 3em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+// Change text colors against dark slide backgrounds
+@include dark-bg-text-color(#fff);
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+.emphasized { font-style: italic; }
+
+.reveal {
+
+    a {
+        text-decoration: underline;
+    }
+
+        .logo::before {
+            content: '';
+            background-image: url('/assets/rockstars.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            top: 100px;
+            left: 100px;
+        }
+
+    .bg-yellow {
+        background-color: $rsYellow;
+
+        a {
+            $linkColor: #000000;
+        }
+    }
+
+    .bg-dark {
+        background-color: $rsDark;
+        color: $white;
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        p {
+            color: $white;
+        }
+    }
+
+    p.handwritten {
+        font-family: $handWrittenFont;
+        font-size: 1.563em;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0rem;
+        left: 10rem;
+    }
+
+    .slides > section {
+
+        box-sizing: border-box;
+        padding: 0 10rem;
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+        
+        &.columns {
+            padding: 0;
+        }
+    }
+
+    section {
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        text-align: left;
+
+        &.align-center {
+            text-align: center;
+
+            footer {
+                left: 50%;
+                transform: translate3d(-50%, 0, 0);
+            }
+        }
+
+        &.align-top {
+            justify-content: flex-start;
+            padding-top: 3rem;
+        }
+
+        &.columns {
+            flex-direction: row;
+        }
+    }
+
+    .column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        width: 45%;
+        padding: 0 5rem;
+
+        &:first-child {
+            width: 55%;
+            height: 100%;
+        }
+    }
+}
+
+ul.unstyled {
+    margin: 0;
+}
+
+.unstyled {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    li {
+      display: flex;
+
+      img {
+          margin-right: .75rem;
+          width: 30px;
+          height: 30px;
+      }
+    }
+  }
