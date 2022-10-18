@@ -2,6 +2,16 @@
 
 An attempt to create a reusable theme for Reveal presentations.
 
+## Screenshots
+
+![Overview](./assets/overview.png)
+
+![Start](./assets/start.png)
+
+![Left aligned](./assets/left-aligned.png)
+
+![Columns](./assets/columns.png)
+
 ## Getting started
 
 Install sass

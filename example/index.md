@@ -2,6 +2,7 @@
 title: Rockstars Presentation
 revealOptions:
   transition: 'none'
+  slideNumber: false
   display: 'flex'
   width: '100%'
   height: '100%'
@@ -55,7 +56,7 @@ Notes:
   <ul>
     <li>Some source</li>
     <li>Some other source</li>
-    <li><a href="https://www.google.com">Yet another source<</a></li>
+    <li><a href="https://www.google.com">Yet another source</a></li>
   </ul>
 </div>
 ---
