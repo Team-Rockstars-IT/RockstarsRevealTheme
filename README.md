@@ -13,5 +13,12 @@ npm install -g sass
 Generate new theme
 
 ``` bash
-sass custom-themes/source/rockstars.scss themes/rockstars.css
+sass theme/source/rockstars.scss theme/rockstars.css
 ```
+
+Test the template
+
+``` bash
+docker run --rm -p 1948:1948 -p 35729:35729 -v $(pwd)/example:/slides -v $(pwd)/theme:/slides/theme webpronl/reveal-md:latest /slides --theme theme/rockstars.css --watch
+```
+
