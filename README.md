@@ -34,7 +34,7 @@ sass theme/source/rockstars.scss theme/rockstars.css
 docker run --rm -p 1948:1948 -p 35729:35729 -v $(pwd)/example:/slides -v $(pwd)/theme:/slides/theme webpronl/reveal-md:latest /slides --theme theme/rockstars.css --watch
 ```
 
-## Using it with your own presentations
+## Using it for your own presentations
 
 Create a separate repository where you store your presentations. Add this repository as a submodule and generate a new theme css file. Include it in your docker command or reveal installation. More documentation will come here!
 

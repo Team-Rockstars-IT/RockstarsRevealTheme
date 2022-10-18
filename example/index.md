@@ -37,6 +37,11 @@ Notes:
 * Some more notes
 
 ---
+<!-- .slide: data-background="https://www.teamrockstars.nl/wp-content/uploads/2021/09/Schermafbeelding-2021-09-16-om-09.39.00kopie-scaled.jpg" -->
+<!-- .element: class="align-center" -->  
+# Team Rockstars IT FTW<!-- .element: class="bg-dark" -->
+
+---
 
 # LET's GET STARTED
 
