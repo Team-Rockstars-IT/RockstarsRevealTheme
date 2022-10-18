@@ -22,3 +22,12 @@ Test the template
 docker run --rm -p 1948:1948 -p 35729:35729 -v $(pwd)/example:/slides -v $(pwd)/theme:/slides/theme webpronl/reveal-md:latest /slides --theme theme/rockstars.css --watch
 ```
 
+## Ideas
+
+- Add blocks from the website to create links
+- Better tables
+- Different color-schemes (She's a rockstar pink?)
+
+## Sources
+
+- [Creating Custom Presentation Themes for Reveal.js](https://webdesign.tutsplus.com/courses/creating-custom-presentation-themes-for-revealjs/lessons/welcome-to-the-course)
