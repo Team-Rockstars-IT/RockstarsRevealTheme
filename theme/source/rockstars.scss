@@ -40,8 +40,8 @@ $fonts-path: "https://teamrockstars.nl/wp-content/uploads/2020/10/";
 }
 
 // Colours
-$rsYellow: #ffe000;
-$rsDark: #232323;
+$accent: #ffe000;
+$dark: #232323;
 $white: #ffffff;
 
 // Override theme settings (see ../template/settings.scss)
@@ -57,7 +57,7 @@ $headingTextShadow: none;
 $headingLetterSpacing: normal;
 $headingTextTransform: uppercase;
 $headingFontWeight: 600;
-$linkColor: $rsYellow;
+$linkColor: $accent;
 $linkColorHover: lighten( $linkColor, 10% );
 $selectionBackgroundColor: lighten( $linkColor, 25% );
 
@@ -95,8 +95,8 @@ $heading4Size: 1.0em;
             left: 180px;
         }
 
-    .bg-yellow {
-        background-color: $rsYellow;
+    .bg-accent {
+        background-color: $accent;
 
         a {
             $linkColor: #000000;
@@ -104,7 +104,7 @@ $heading4Size: 1.0em;
     }
 
     .bg-dark {
-        background-color: $rsDark;
+        background-color: $dark;
         color: $white;
 
         h1,

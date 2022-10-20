@@ -12,7 +12,7 @@ revealOptions:
   progress: false
 ---
 
-<!-- .element: class="bg-yellow align-center logo" -->  
+<!-- .element: class="bg-accent align-center logo" -->  
 # AWESOME PRESENTATION
 ## MET AWESOME SUBTITLE
 
@@ -25,7 +25,7 @@ Notes:
 * Introduction
 
 ---
-<!-- .element: class="bg-yellow" -->  
+<!-- .element: class="bg-accent" -->  
 # Some subject?
 
 "Just a nice quote here"
@@ -66,12 +66,12 @@ Notes:
 </div>
 ---
 
-<!-- .element: class="bg-yellow" -->  
+<!-- .element: class="bg-accent" -->  
 # VRAGEN?
 
 ---
 
-<!-- .element: class="bg-yellow" -->  
+<!-- .element: class="bg-accent" -->  
 # Thanks!
 ### Feel free to contact me if you have any question!
 
