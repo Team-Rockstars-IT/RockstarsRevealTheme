@@ -2,6 +2,10 @@
 
 An attempt to create a reusable theme for Reveal presentations. This theme can be used with [reveal-js](https://revealjs.com) or [reveal-md](https://github.com/webpro/reveal-md) and even with reveal in Docker: [reveal.js on steroids](https://github.com/webpro/reveal-md). With this theme it is possible to create reusable presentations in the Team Rockstars IT layout.
 
+## Preview
+
+See the demo in action [here](https://team-rockstars-it.github.io/RockstarsRevealTheme/).
+
 ## Screenshots
 
 ![Overview](./assets/overview.png)
