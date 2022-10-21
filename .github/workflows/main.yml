@@ -24,11 +24,22 @@ jobs:
       - name: Move compiled CSS to path within pr-pages branch
         run: mv /tmp/RockstarsRevealTheme/assets/css/rockstars.css assets/
 
-      - uses: "marvinpinto/action-automatic-releases@latest"
+      - name: Install and Build 🔧
+        run: |
+          npm install --no-optional reveal-md
+          ./node_modules/.bin/reveal-md --css assets/rockstars.css --static build example/index.md
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          automatic_release_tag: "latest"
-          prerelease: true
-          title: "Development Build"
-          files: |
-            assets/rockstars.css
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: build
+          #- uses: "marvinpinto/action-automatic-releases@latest"
+          #  with:
+          #    repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          #    automatic_release_tag: "latest"
+          #    prerelease: true
+          #    title: "Development Build"
+          #    files: |
+          #      assets/rockstars.css
