@@ -6,6 +6,12 @@ An attempt to create a reusable theme for Reveal presentations. This theme can b
 
 See the demo in action [here](https://team-rockstars-it.github.io/RockstarsRevealTheme/).
 
+Most important keyboard shortcuts:
+
+- \<ESC\>: An overview of the presentation
+- \<S\>: Speaker deck with notes (dual screen support)
+- \<ARROW\>-keys: next/previous/up/down
+
 ## Screenshots
 
 ![Overview](./assets/overview.png)
