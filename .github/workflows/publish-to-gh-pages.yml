@@ -15,6 +15,7 @@ on:
       
 jobs:
   build_css:
+    timeout-minutes: 10
     runs-on: ubuntu-latest
 
     steps:
