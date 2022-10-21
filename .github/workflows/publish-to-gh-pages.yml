@@ -33,7 +33,7 @@ jobs:
       - name: Install and Build 🔧
         run: |
           npm install --no-optional reveal-md
-          ./node_modules/.bin/reveal-md --css rockstars.css --static build example/index.md
+          ./node_modules/.bin/reveal-md --css rockstars.css --assets-dir assets --static build example/index.md
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
