@@ -35,7 +35,7 @@ npm install -g sass
 * Generate new theme
 
 ``` bash
-sass theme/source/rockstars.scss theme/rockstars.css
+sass --watch theme/source/rockstars.scss theme/rockstars.css
 ```
 
 * Test the template
