@@ -19,15 +19,12 @@ jobs:
         uses: gha-utilities/sass-build@v0.4.9
         with:
           source: theme/source/rockstars.scss
-          destination: /tmp/RockstarsRevealTheme/assets/css/rockstars.css
-
-      - name: Move compiled CSS to path within pr-pages branch
-        run: mv /tmp/RockstarsRevealTheme/assets/css/rockstars.css assets/
+          destination: rockstars.css
 
       - name: Install and Build 🔧
         run: |
           npm install --no-optional reveal-md
-          ./node_modules/.bin/reveal-md --css assets/rockstars.css --static build example/index.md
+          ./node_modules/.bin/reveal-md --css rockstars.css --static build example/index.md
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
