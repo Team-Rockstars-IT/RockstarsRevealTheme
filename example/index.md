@@ -36,7 +36,12 @@ Notes:
 * Book review
 * Some more notes
 
+----
+
+# Sub-page of an awesome subject
+
 ---
+
 <!-- .slide: data-background="https://www.teamrockstars.nl/wp-content/uploads/2021/09/Schermafbeelding-2021-09-16-om-09.39.00kopie-scaled.jpg" -->
 <!-- .element: class="align-center" -->  
 # Team Rockstars IT FTW<!-- .element: class="bg-dark" -->
@@ -52,7 +57,26 @@ Notes:
 Notes:
 * Info about the links
 
+----
+
+# Start with these steps
+
+1. Start a console
+2. Type exit
+3. Start a new console
+
+----
+
+# The Code
+
+``` csharp
+void DoSomething(string text)
+{
+}
+```
+
 ---
+
 <!-- .element: class="columns" -->  
 
 # BRONNEN<!-- .element: class="bg-dark column" --> 
